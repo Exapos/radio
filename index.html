@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="./app.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <title>Spotify</title>
+</head>
+<body onload="onPageLoad()">
+    <span id="back"></span>
+    <header>
+        <a href="http://" target="_blank" rel="noopener noreferrer">
+            <img src="./sources/banner.png" alt="banner radio">       
+        </a>
+        <div>Frekvence 94.7FM pro Teplice i Ústí na Labem</div>
+    </header>
+
+    <nav>   
+        <a href="./index.html" class="active">Radio</a>
+        <a href="./exapos/index.html">Tvůrce</a>
+        <a href="https://steamcommunity.com/id/prashkims/">Kontakt</a>
+        <a href="#about">O nás</a>
+        <div class="animation start-home"></div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row d-flex justify-content-center text-center" id="deviceSection">
+                <div class="col-6 align-self-center">
+                    <h1> Momentalně se vysíla <span id="trackTitle" style="color: #1abc9c;"></span> od <span id="trackArtist" style="color: #1abc9c;" ></span> </h1>    
+                    <input type="button" class="btn btn-dark btn-sm mt-3" id="buttongithub" onclick="play()" value="Přehraj">                 
+                </div>
+                <div class="col-4 mt-4">
+                    <img id="albumImage" src="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div id="about">
+            <div class="container">
+                <div class="row d-flex justify-content-center text-center pt-5">
+                    <div class="col" id="col1">
+                        Tenhle projekt vznikl jednou v hlavě nadějnýho programatora webových stránek. Eh to jsem <a href="./exapos/index.html">já</a> kdyby jste nevěděli ¯\_(ツ)_/¯ <br><br>
+                        A to jen protože si řekl že to potěší jednu hodnou dušičku :D
+                    </div>
+    
+                    <div class="col" id="col2">
+                        Rádio vzniklo když si Exapos chtěl pustit Péťi písničky na spotify a všichni ostatní se k němu přidali. <br><br> Od té doby se z toho stalo radio Péťa radio
+                    </div>
+                </div>
+            </div>
+        </div>     
+        <a href="#back" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </section>
+</body>
+</html>
+
+    
